@@ -1,0 +1,7 @@
+{
+  "name": "Yvsim.NavigationMarker.Samples",
+  "rootNamespace": "Yvsim.NavigationMarker.Samples",
+  "references": [
+    "Yvsim.NavigationMarker"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "com.yvsim.navigation-marker",
+  "version": "1.0.0",
+  "displayName": "Navigation Marker",
+  "description": "基于 Unity NavMesh 与 LineRenderer 的运行时导航指引，用连续滚动的箭头线显示当前位置到目标点的可行路径，适合展馆导览、场景任务指引和仿真路线展示。\n\n主要功能：\n1. 根据玩家和目标 Transform 调用 NavMesh.CalculatePath，并按路径拐点绘制导航线。\n2. 每帧跟踪玩家与移动目标，重新计算并更新线路。\n3. 根据路径长度与箭头世界间距调整贴图重复次数，通过材质偏移表现方向动画。\n4. 提供导航组件、可直接使用的 Prefab、材质和箭头贴图，以及运行时生成 NavMesh 的示例。\n\n使用说明：场景需有可用 NavMesh，需配置起终点并初始化组件；包只显示路线，不驱动角色移动。附带材质面向 Built-in，URP/HDRP 需替换适配材质；不依赖 Inspector Groups 或其他 Yvsim 包。",
+  "unity": "2021.3",
+  "author": {
+    "name": "Yvsim"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "com.unity.modules.ai": "1.0.0"
+  },
+  "keywords": [
+    "navigation",
+    "navmesh",
+    "path",
+    "line-renderer"
+  ],
+  "samples": [
+    {
+      "displayName": "Runtime Navigation",
+      "description": "将 RuntimeNavigationExample 添加到空场景物体，运行时自动创建演示 NavMesh、玩家与终点，观察移动终点后的路径和滚动箭头，并操作导航线显隐；无需预先烘焙示例 NavMesh。",
+      "path": "Samples~/Runtime Navigation"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liuyan7669/com.yvsim.navigation-marker.git"
+  },
+  "documentationUrl": "https://github.com/liuyan7669/com.yvsim.navigation-marker#readme",
+  "changelogUrl": "https://github.com/liuyan7669/com.yvsim.navigation-marker/blob/main/CHANGELOG.md",
+  "bugs": {
+    "url": "https://github.com/liuyan7669/com.yvsim.navigation-marker/issues"
+  },
+  "licensesUrl": "https://github.com/liuyan7669/com.yvsim.navigation-marker/blob/main/LICENSE"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Yvsim.NavigationMarker.Editor.Tests",
+  "rootNamespace": "Yvsim.NavigationMarker.Tests",
+  "references": [
+    "Yvsim.NavigationMarker"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "autoReferenced": false
+}
